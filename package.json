@@ -17,6 +17,8 @@
     "japanese",
     "kansuji",
     "kanji",
+    "number",
+    "toString",
     "converter"
   ],
   "author": "hee-san <hira9603859504@gmail.com>",
