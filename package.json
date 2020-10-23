@@ -1,0 +1,25 @@
+{
+  "name": "num_ja",
+  "version": "1.0.0",
+  "description": "Convert between number and Japanese",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hee-San/num_ja.git"
+  },
+  "keywords": [
+    "japanese",
+    "kansuji",
+    "kanji",
+    "converter"
+  ],
+  "author": "hee-san <hira9603859504@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hee-San/num_ja/issues"
+  },
+  "homepage": "https://github.com/Hee-San/num_ja#readme"
+}
