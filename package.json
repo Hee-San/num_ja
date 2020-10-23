@@ -29,5 +29,6 @@
   "homepage": "https://github.com/Hee-San/num_ja#readme",
   "devDependencies": {
     "jest": "^26.6.1"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
