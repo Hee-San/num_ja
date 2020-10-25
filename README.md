@@ -6,8 +6,10 @@ Convert between number and Japanese
 
 ## Usage
 
+[Test num_ja in your browser](https://npm.runkit.com/num_ja)
+
 ```js
-var numJa = require("num_ja")
+var num_ja = require("num_ja")
 
 console.log(num_ja.num_ja(12345))
 // => 一万二千三百四十五
