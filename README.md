@@ -6,7 +6,7 @@ Convert between number and Japanese
 
 ## Usage
 
-[Test num_ja in your browser](https://npm.runkit.com/num_ja)
+[Test num_ja in your browser](https://npm.runkit.com/%40hee-san%2Fnum_ja)
 
 ```js
 var num_ja = require("num_ja")
