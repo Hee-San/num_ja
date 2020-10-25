@@ -30,8 +30,5 @@
   "devDependencies": {
     "jest": "^26.6.1"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {}
 }
