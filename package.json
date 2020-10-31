@@ -1,6 +1,6 @@
 {
   "name": "@hee-san/num_ja",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Convert between number and Japanese",
   "main": "src/index.js",
   "scripts": {
