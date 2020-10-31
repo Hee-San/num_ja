@@ -15,3 +15,10 @@ test("japanese to number", () => {
   expect(num_ja.ja_num("一億千百一")).toBe(100001101);
   expect(num_ja.ja_num("十二億三千四百五十六万七千八百九十")).toBe(1234567890);
 });
+
+test("ja_num other styles", () => {
+  expect(num_ja.ja_num("零")).toBe(0);
+  expect(num_ja.ja_num("壱")).toBe(1);
+  expect(num_ja.ja_num("負の廿")).toBe(-20);
+  expect(num_ja.ja_num("一萬阡陌拾")).toBe(11110);
+});
