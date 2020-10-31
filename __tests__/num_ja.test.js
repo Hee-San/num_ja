@@ -21,4 +21,7 @@ test("ja_num other styles", () => {
   expect(num_ja.ja_num("壱")).toBe(1);
   expect(num_ja.ja_num("負の廿")).toBe(-20);
   expect(num_ja.ja_num("一萬阡陌拾")).toBe(11110);
+  expect(num_ja.ja_num("じゅうにおくさんぜんよんひゃくまん")).toBe(1234000000);
+  expect(num_ja.ja_num("ごじゅうろくまんななせんはっぴゃく")).toBe(567800);
+  expect(num_ja.ja_num("にせんとんでにじゅう")).toBe(2020);
 });

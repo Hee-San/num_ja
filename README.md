@@ -39,8 +39,8 @@ console.log(num_ja.ja_num("十二億三千四百五十六万七千八百九十")
 ```
 
 ### OTHER STYLES
-`ja_num` supports [Daiji](https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AD%97_(%E6%95%B0%E5%AD%97))
-`ja_num`は大字による表記も変換できます。
+`ja_num` supports [Daiji](https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AD%97_(%E6%95%B0%E5%AD%97)) and Hiragana.
+`ja_num`は大字やひらがなによる表記も変換できます。
 
 ```js
 var num_ja = require("num_ja");
@@ -53,6 +53,10 @@ console.log(num_ja.ja_num("負の廿壹"));
 // => -21
 console.log(num_ja.ja_num("一萬阡陌拾"));
 // => 11110
+console.log(num_ja.ja_num("せんにひゃくさんじゅうよん"));
+// => 1234
+console.log(num_ja.ja_num("にせんとんでにじゅう"));
+// => 2020
 ```
 
 ## Install
