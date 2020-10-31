@@ -5,35 +5,54 @@
 Convert between number and Japanese
 アラビア数字と漢数字を相互に変換します。
 
+[See in npmjs.com](https://www.npmjs.com/package/@hee-san/num_ja)
+
 ## Usage
 
 [Test num_ja in your browser](https://npm.runkit.com/%40hee-san%2Fnum_ja)
 
 ```js
-var num_ja = require("num_ja")
+var num_ja = require("num_ja");
 
-console.log(num_ja.num_ja(0))
+console.log(num_ja.num_ja(0));
 // => 〇
-console.log(num_ja.num_ja(1))
+console.log(num_ja.num_ja(1));
 // => 一
-console.log(num_ja.num_ja(-1))
+console.log(num_ja.num_ja(-1));
 // => マイナス一
-console.log(num_ja.num_ja(100001101))
+console.log(num_ja.num_ja(100001101));
 // => 一億千百一
-console.log(num_ja.num_ja(1234567890))
+console.log(num_ja.num_ja(1234567890));
 // => 十二億三千四百五十六万七千八百九十
 
-console.log(num_ja.ja_num("〇"))
+console.log(num_ja.ja_num("〇"));
 // => 0
-console.log(num_ja.ja_num("一"))
+console.log(num_ja.ja_num("一"));
 // => 1
-console.log(num_ja.ja_num("マイナス一"))
+console.log(num_ja.ja_num("マイナス一"));
 // => -1
-console.log(num_ja.ja_num("一億千百一"))
+console.log(num_ja.ja_num("一億千百一"));
 // => 100001101
-console.log(num_ja.ja_num("十二億三千四百五十六万七千八百九十"))
+console.log(num_ja.ja_num("十二億三千四百五十六万七千八百九十"));
 // => 1234567890
 
+```
+
+### OTHER STYLES
+`ja_num` supports [Daiji](https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AD%97_(%E6%95%B0%E5%AD%97))
+`ja_num`は大字による表記も変換できます。
+
+```js
+var num_ja = require("num_ja");
+
+console.log(num_ja.ja_num("零"));
+// => 0
+console.log(num_ja.ja_num("壱"));
+// => 1
+console.log(num_ja.ja_num("負の廿壹"));
+// => -21
+console.log(num_ja.ja_num("一萬阡陌拾"));
+// => 11110
 ```
 
 ## Install
@@ -41,11 +60,11 @@ console.log(num_ja.ja_num("十二億三千四百五十六万七千八百九十")
 Install from the command line:
 
 ```sh
-npm install @hee-san/num_ja@2.0.11
+npm install @hee-san/num_ja@3.1.0
 ```
 
 Install via package.json:
 
 ```json
-"@hee-san/num_ja": "2.0.11"
+"@hee-san/num_ja": "3.1.0"
 ```
