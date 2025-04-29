@@ -3,15 +3,15 @@
 [![Node.js Package](https://github.com/Hee-San/num_ja/workflows/Node.js%20Package/badge.svg)](https://github.com/Hee-San/num_ja/actions)
 [![GitHub license](https://img.shields.io/github/license/Hee-San/num_ja)](https://opensource.org/licenses/MIT)
 
-Convert between number and Japanese.
+アラビア数字と漢数字を相互に変換します。
 
-[See in npmjs.com](https://www.npmjs.com/package/@hee-san/num_ja)
+[npmjs.comで見る](https://www.npmjs.com/package/@hee-san/num_ja)
 
-*[日本語のドキュメントはこちら (Japanese documentation)](README.ja.md)*
+*[English documentation here](README.md)*
 
-## Usage
+## 使い方
 
-[Test num_ja in your browser](https://npm.runkit.com/%40hee-san%2Fnum_ja)
+[ブラウザでnum_jaをテスト](https://npm.runkit.com/%40hee-san%2Fnum_ja)
 
 ```js
 var numJa = require("num_ja");
@@ -39,25 +39,23 @@ console.log(numJa.ja_num("十二億三千四百五十六万七千八百九十"))
 // => 1234567890
 ```
 
-## Supported Range
+## 対応範囲
 
-This library can handle numbers within the following range:
+このライブラリは以下の範囲の数値を扱うことができます：
 
-- Numbers: Up to JavaScript's `Number.MAX_SAFE_INTEGER` (9,007,199,254,740,991)
-- Units: Supports units up to "kei" (京, 10^16)
+- 数値: JavaScriptの`Number.MAX_SAFE_INTEGER`（9,007,199,254,740,991）まで
+- 単位: 一、十、百、千、万、億、兆、京まで対応
 
-**Not supported**:
+**非対応**:
 
-- Units larger than "kei" (such as 垓, 𥝱, 穣, 溝, 澗, 正, 載, 極, etc.)
-- Fractional units like "bu" (分), "rin" (厘), "mou" (毛), etc. (integers only)
+- 「京」より上の単位（垓、𥝱、穣、溝、澗、正、載、極など）には対応していません
+- 「分」「厘」「毛」など小数点以下の単位には対応していません（整数のみサポート）
 
-Exceptions will be thrown for invalid inputs (numbers out of range, NaN, invalid kanji number strings, etc.).
+無効な入力（数値範囲外、NaN、不正な漢数字文字列など）に対しては、例外がスローされます。
 
-## Other Styles
+## その他のスタイル
 
-`ja_num` supports [Daiji](https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AD%97_(%E6%95%B0%E5%AD%97)) and Hiragana.
-
-**What is Daiji?**: Daiji (大字) refers to the formal/old numerical kanji characters used in Japan for financial and legal documents to prevent forgery. These characters are more complex than standard numerals, making them harder to alter. Examples include 壱 (1), 弐 (2), 参 (3), etc.
+`ja_num`は[大字](https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%AD%97_(%E6%95%B0%E5%AD%97))やひらがなによる表記も変換できます。
 
 ```js
 var numJa = require("num_ja");
@@ -76,11 +74,11 @@ console.log(numJa.ja_num("にせんとんでにじゅう"));
 // => 2020
 ```
 
-## Supported Notation Styles
+## 対応する表記スタイル
 
-The following notation styles are supported:
+以下の表記スタイルに対応しています：
 
-| Standard | Other Supported Notations | Numeric Value |
+| 標準 | その他の対応表記 | 数値 |
 |------|-----------------|-------------|
 | 〇 | 零, ぜろ, れい | 0 |
 | 一 | 壱, 壹, 弌, いち, いっ | 1 |
@@ -102,18 +100,18 @@ The following notation styles are supported:
 | 億 | おく | 100,000,000 |
 | 兆 | ちょう | 1,000,000,000,000 |
 | 京 | けい | 10,000,000,000,000,000 |
-| マイナス | -, 負の, 負, まいなす | - (negative) |
-| (empty) | とんで | Indicates omission when reciting numbers (used when a digit place has zero value) |
+| マイナス | -, 負の, 負, まいなす | - (符号) |
+| (空) | とんで | 省略を表す |
 
-## Install
+## インストール
 
-Install from the command line:
+コマンドラインからインストール:
 
 ```sh
 npm install @hee-san/num_ja
 ```
 
-Install via package.json:
+package.jsonを使用したインストール:
 
 ```json
 "@hee-san/num_ja": "latest"
