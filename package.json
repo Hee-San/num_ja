@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Hee-San/num_ja#readme",
   "devDependencies": {
-    "jest": "^26.6.1"
+    "jest": "^29.7.0"
   },
   "dependencies": {}
 }
